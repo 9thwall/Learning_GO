@@ -2,19 +2,18 @@ package main
 
 import "fmt"
 
-func mulitples() ([]int,int) {
+func mulitples() ([]int, int) {
 	var numList []int
 	var total int
-	for i :=0; i < 1000; i++ {
-		if(i % 3  == 0 || i % 5 == 0){
-			numList = append(numList,i)
+	for i := 0; i < 1000; i++ {
+		if i%3 == 0 || i%5 == 0 {
+			numList = append(numList, i)
 			total += i
 		}
 	}
 
 	return numList, total
 }
-
 
 func main() {
 
